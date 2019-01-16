@@ -28,3 +28,14 @@ var summation = function (n) {
     return n * (n + 1)/2
 }
 console.log(summation(8))
+
+// Given a non-negative integer, such as 3, return a string "1 sheep... 2 sheep... 3 sheep..."
+
+var countSheep = function (num) {
+    let statement = '';
+    for(let i=1; i<=num; i++){
+        statement += `${i} sheep...`
+    }
+    return statement 
+}
+console.log(countSheep(3))
