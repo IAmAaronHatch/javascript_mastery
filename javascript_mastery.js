@@ -82,3 +82,9 @@ function whatday(num) {
 
 }
 console.log(whatday())
+
+function spEng(sentence) {
+    let eng = /english/i 
+    return eng.test(sentence)
+}
+console.log(spEng('HelEnglish'))
