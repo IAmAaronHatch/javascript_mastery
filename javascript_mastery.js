@@ -38,7 +38,7 @@ var countSheep = function (num) {
     }
     return statement 
 }
-// console.log(countSheep(3))
+// console.log(countSheep(6))
 
 function DNAtoRNA(dna) {
     // let n = dna.split('')
@@ -49,9 +49,36 @@ function DNAtoRNA(dna) {
     // })
     // return m.join('')
 
-    // return dna.split('T').join('U')
+    return dna.split('T').join('U')
 
-    return dna.replace(/T/g)
+    // return dna.replace(/T/g, "U")
 
 }
-console.log(DNAtoRNA('GCAT'))
+// console.log(DNAtoRNA('GCAT'))
+
+function finalGrade(exam, projects) {
+    let finalG = 0;
+    // if(exam >= 90 || projects>10) {
+    //     finalG = 100
+    // } else if (exam >= 75 || projects == 5) {
+    //     finalG = 90
+    // } else if (exam >= 50 || projects == 2) {
+    //     finalG = 75
+    // }
+    // return finalG
+
+}
+console.log(finalGrade(85, 5))
+
+// Return the name of the day that corrisponds with the number value passed in. If not a num, return "Wrong, please enter a number between 1 and 7"
+
+function whatday(num) {
+    let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    if (1<=num==num<8) {
+        return week[num - 1]
+    } else {
+        return "Wrong, please enter a number between 1 and 7"
+    }
+
+}
+console.log(whatday())
