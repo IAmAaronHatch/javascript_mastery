@@ -88,3 +88,50 @@ function spEng(sentence) {
     return eng.test(sentence)
 }
 console.log(spEng('HelEnglish'))
+
+
+function isToday(date) {
+    // console.log('date', date)
+    let today = new Date();
+    // console.log('today', today)
+    let diff = Math.abs(date - today)
+    if (diff > 10) {
+        return false
+    } else {
+        return true
+    }
+    // if (today == date) {
+    //     return true
+    // } else {
+    //     return false
+    // }
+}
+
+console.log(isToday(new Date()))
+
+// var diff = Math.abs(a - b);
+
+// if (diff > 50) {
+//     console.log('diff greater than 50');
+// }
+
+// given an array of integers, give the sum of the positive one 
+// function positiveSum(arr) {
+//     let sum = 0
+//     for( let i = 0; i < arr.length; i++){
+//         if(arr[i] > 0){
+//             sum += arr[i]
+//         }
+//     }
+//     return sum
+// }
+function positiveSum (arr) {
+    let sum = 0;
+    arr.map(x => {
+        if(x > 0){
+            sum += x
+        }
+    })
+    return sum
+}
+console.log(positiveSum([1, 2, 3, -4, 100, -1203, 10]))
