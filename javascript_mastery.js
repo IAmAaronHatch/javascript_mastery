@@ -136,11 +136,15 @@ function positiveSum (arr) {
 }
 console.log(positiveSum([1, 2, 3, -4, 100, -1203, 10]))
 
+// function grow (x) {
+//     let sum = 1;
+//     for(let i=0; i < x.length; i++) {
+//         sum = sum * x[i] 
+//     }
+//     return sum
+// }
+
 function grow (x) {
-    let sum = 1;
-    for(let i=0; i < x.length; i++) {
-        sum = sum * x[i] 
-    }
-    return sum
+    return x.reduce ((a, b) => a * b)
 }
 console.log(grow([1,2,3,4,5]))
