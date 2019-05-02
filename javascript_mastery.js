@@ -149,16 +149,20 @@ function grow (x) {
 }
 console.log(grow([1,2,3,4,5]))
 
-function enough(cap, on, wait) {
-    // your code here
-    let cantTake = 0;
-    let total = on + wait;
-    if (cap >= total) {
-        return 0
-    } else if (cap < total) {
-        cantTake = total - cap
-        return cantTake
-    }
+// function enough(cap, on, wait) {
+//     // your code here
+//     let cantTake = 0;
+//     let total = on + wait;
+//     if (cap >= total) {
+//         return 0
+//     } else if (cap < total) {
+//         cantTake = total - cap
+//         return cantTake
+//     }
+// }
+
+function enough (cap, on, wait) {
+    return (cap <= on + wait) ? ( on + wait - cap) : 0
 }
 console.log(enough(10, 5, 5))
 console.log(enough(90, 50, 50))
