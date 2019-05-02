@@ -160,3 +160,6 @@ function enough(cap, on, wait) {
         return cantTake
     }
 }
+console.log(enough(10, 5, 5))
+console.log(enough(90, 50, 50))
+console.log(enough(1000, 213, 21))
