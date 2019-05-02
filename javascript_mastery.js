@@ -148,3 +148,15 @@ function grow (x) {
     return x.reduce ((a, b) => a * b)
 }
 console.log(grow([1,2,3,4,5]))
+
+function enough(cap, on, wait) {
+    // your code here
+    let cantTake = 0;
+    let total = on + wait;
+    if (cap >= total) {
+        return 0
+    } else if (cap < total) {
+        cantTake = total - cap
+        return cantTake
+    }
+}
