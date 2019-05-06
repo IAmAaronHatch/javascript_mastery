@@ -183,3 +183,9 @@ function sum(numbers) {
 // Had to add a catch all for an array that was empty, or else it threw out an error for []
 
 console.log(sum([1, 5.2, 4, 0, -1]))
+
+function greet () {
+    // return "Hello World!"
+}
+
+console.log(greet())
