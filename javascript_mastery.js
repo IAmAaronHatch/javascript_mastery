@@ -184,8 +184,12 @@ function sum(numbers) {
 
 console.log(sum([1, 5.2, 4, 0, -1]))
 
-function greet () {
-    // return "Hello World!"
+function greet() {
+    var arr = [104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 33];
+    return arr.map(function (i) {
+        return String.fromCharCode(i);
+    }).join('');
+
 }
 
 console.log(greet())
