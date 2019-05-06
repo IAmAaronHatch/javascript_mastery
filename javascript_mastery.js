@@ -167,3 +167,9 @@ function enough (cap, on, wait) {
 console.log(enough(10, 5, 5))
 console.log(enough(90, 50, 50))
 console.log(enough(1000, 213, 21))
+
+function sum(numbers) {
+    return numbers.reduce((x, y) => x + y)
+};
+
+console.log(sum([1, 5.2, 4, 0, -1]))
