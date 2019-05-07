@@ -224,3 +224,11 @@ console.log(greet())
 
 //If you loop throught this and compare I to J, and splice it out, it will remove just the first lower integer.
 //You could also map instead of a nested for loop?
+
+function removeNumbers (arr) {
+    let lowest = Math.min(...arr);
+    let lowestIndex = arr.indexOf(lowest);
+    arr.splice(lowestIndex, 1);
+    return arr;
+}
+console.log(removeNumbers([1, 4, 3, 5, 6, 2, 1]))
