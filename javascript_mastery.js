@@ -193,3 +193,34 @@ function greet() {
 }
 
 console.log(greet())
+
+// Write a function that takes in an array of integers and removes the lowest value, then returns the adjusted array.  If there are multiple instances of the same number, remove the number with the lowest index.  If passed an empty array, your function should return an empty array.
+
+// Do not change the order of the remaining elements of the array.
+
+// EXAMPLE:
+
+// var sampleArr = [9, 2, 7, 3, 1, 5, 6, 4, 8, 1]
+
+// Function should return: [9, 2, 7, 3, 5, 6, 4, 8, 1]
+
+// var intArray = (arr) => {
+
+//   let updatedArray = []
+
+//   for(let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//       if(arr[i]===arr[j]) {
+//         updatedArray.push(arr.splice(i, 1))
+
+//       }
+//     }
+//   }
+
+//   return updatedArray
+// }
+
+// console.log(intArray([1,4,3,5,6,2,1])) ==> returns [[1],[3],[6],[1]]
+
+//If you loop throught this and compare I to J, and splice it out, it will remove just the first lower integer.
+//You could also map instead of a nested for loop?
