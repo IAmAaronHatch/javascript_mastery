@@ -232,3 +232,12 @@ function removeNumbers (arr) {
     return arr;
 }
 console.log(removeNumbers([1, 4, 3, 5, 6, 2, 1]))
+
+function sumMix(x) {
+    let total = 0
+    x.map(a => {
+        total += Number(a)
+    })
+    return total
+}
+console.log(sumMix([9, 3, '7', '3']))
